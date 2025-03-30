@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- navbar -->
+    <!-- navbar + Actividad 2-->
     <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
         <div class="container">
             <a class="nav-brand" href="index.html"><img id="MDB-logo" src="img/home.jpg" alt="Inicio Logo"
@@ -25,26 +25,102 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#"><i class="fas fa-plus-circle pe-2"></i>Página 1</a>
+                        <a class="nav-link mx-2" href="pagina1.html"><i class="fas fa-plus-circle pe-2"></i>Página 1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#"><i class="fas fa-plus-circle pe-2"></i>Página 2</a>
+                        <a class="nav-link mx-2" href="pagina2.html"><i class="fas fa-plus-circle pe-2"></i>Página 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#"><i class="fas fa-plus-circle pe-2"></i>Página 3</a>
+                        <a class="nav-link mx-2" href="pagina3.html"><i class="fas fa-plus-circle pe-2"></i>Página 3</a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Content -->
+    <!-- Contenido -->
     <div class="container mt-5 pt-5">
         <h1 class="text-center">Bienvenido a la Página 1</h1>
         <p class="text-center">Esta es la página 1 de nuestro laboratorio.</p>
-        <img src="img/laboratorio.jpg" alt="Laboratorio" class="img-fluid mx-auto d-block">
+        <img src="img/imagen1.jpg" alt="Laboratorio" class="img-fluid mx-auto d-block" style="max-width: 70%;">
     </div>
+    
+    <!-- Actividad 3 -->
+    <div class="container mt-4">
+        <!-- Párrafos -->
+        <p>El Frontend es la parte de una aplicación o sitio web con la que los usuarios interactúan directamente, abarcando diseño, estructura y comportamiento visual.</p>
+        <p>Se construye utilizando tecnologías como HTML, CSS y JavaScript, que permiten crear interfaces atractivas y funcionales.</p>
+        <p>El objetivo principal del Frontend es garantizar una experiencia de usuario intuitiva y agradable, adaptándose a diferentes dispositivos y navegadores.</p>
+
+        <!-- Imágenes -->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/web1.png" alt="Imagen 2" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <img src="img/web2.jpg" alt="Imagen 3" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <img src="img/web3.jpg" alt="Imagen 4" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- Acordeón -->
+        <div class="accordion mt-4" id="accordionExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Qué es el Frontend?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                El Frontend es la parte visual e interactiva de un sitio web o aplicación, diseñada para que los usuarios puedan interactuar con ella. Incluye elementos como botones, menús, imágenes y texto.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tecnologías del Frontend
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Las principales tecnologías utilizadas en el desarrollo Frontend son:
+                <ul>
+                    <li><strong>HTML:</strong> Estructura el contenido de la página.</li>
+                    <li><strong>CSS:</strong> Estiliza y da diseño a la página.</li>
+                    <li><strong>JavaScript:</strong> Añade interactividad y dinamismo.</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Herramientas y Frameworks
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Algunas herramientas y frameworks populares en el desarrollo Frontend son:
+                <ul>
+                    <li><strong>Bootstrap:</strong> Framework para diseño responsivo.</li>
+                    <li><strong>React:</strong> Biblioteca para construir interfaces de usuario.</li>
+                    <li><strong>Vue.js:</strong> Framework progresivo para construir interfaces web.</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Alerta -->
+        <div class="alert alert-warning mt-4" role="alert">
+            ¡Esta es una alerta de advertencia! ¡Échale un vistazo!
+        </div>
+    </div>
+
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
